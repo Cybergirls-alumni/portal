@@ -97,7 +97,7 @@ export default function Home() {
                   <span className="text-blue-600 text-lg">🤝</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Community</h3>
-                <p className="text-sm text-gray-500">A network of women who share knowledge, opportunities, and support one another's growth in the industry.</p>
+                <p className="text-sm text-gray-500">A network of women who share knowledge, opportunities, and support one another&apos;s growth in the industry.</p>
               </div>
               <div className="bg-white rounded-xl border border-gray-200 p-5">
                 <div className="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center mb-3">

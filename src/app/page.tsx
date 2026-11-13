@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,12 +21,13 @@ export default function Home() {
             <a href="#alumni" className="text-sm text-gray-500 hover:text-gray-900 transition-colors hidden sm:block">
               Alumni
             </a>
-            <Link
+            {/* Plain <a>, not <Link>: /letters is a separate app proxied through this one, and Next's client prefetch of it 404s on Vercel */}
+            <a
               href="/letters"
               className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
             >
               Alumni Portal
-            </Link>
+            </a>
           </nav>
         </div>
       </header>
@@ -155,7 +155,7 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* Letters tracker */}
-            <Link
+            <a
               href="/letters"
               className="group bg-white rounded-xl border border-gray-200 p-6 hover:border-blue-300 hover:shadow-md transition-all"
             >
@@ -170,7 +170,7 @@ export default function Home() {
               <span className="text-sm font-medium text-blue-600 group-hover:text-blue-700">
                 Submit a request →
               </span>
-            </Link>
+            </a>
 
             {/* Placeholder: Events */}
             <div className="bg-white rounded-xl border border-dashed border-gray-200 p-6 opacity-60">
